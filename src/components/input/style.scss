@@ -1,0 +1,69 @@
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+
+  label {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    color: #373d40;
+  }
+
+  input {
+    width: 70%;
+    background: #f5f8f9;
+    border: 1px solid transparent;
+    height: 48px;
+    border-radius: 8px;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none !important;
+      border: 1px solid #cad7dd;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cad7dd;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #cad7dd;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #cad7dd;
+}
+
+input[type=date]::-webkit-datetime-edit {
+  color: #cad7dd;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(/images/calendar.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}

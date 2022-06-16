@@ -1,0 +1,15 @@
+.page-container {
+  background: #fff;
+  display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: 800px;
+  
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    height: 100%;
+    border-radius: 0;
+    overflow: scroll;
+  }
+}

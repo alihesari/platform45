@@ -1,0 +1,14 @@
+.page-layout {
+  width: 1320px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    align-items: normal;
+    display: block;
+    margin: auto;
+  }
+}
